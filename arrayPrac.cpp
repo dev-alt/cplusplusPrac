@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <iomanip>
+#include <iterator>
 
 using namespace std;
 
@@ -19,6 +20,9 @@ int main(){
         std::cout << price << std::endl;
     }
 
+    // Get size of Array using size
+    int sizeIterator = std::size(prices);
+    // Calculate size of Array
     int size = sizeof(prices)/sizeof(prices[0]);
     double total = getTotal(prices, size);
     cout << "$" << total;
